@@ -7,7 +7,7 @@ const Header = () => {
     <Stack 
     position="relative"    
     >
-        <Image h="100%" src='/Hero/default.png' />
+        <Image objectFit="scale-down" h="100%" src='/Hero/default.png' />
         <Link href="#Proyectos">
           <Box  
             h="19%"
