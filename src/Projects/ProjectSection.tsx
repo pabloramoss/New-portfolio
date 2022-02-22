@@ -1,0 +1,45 @@
+import React from 'react';
+import {Stack, Heading,} from "@chakra-ui/react"
+import ProjectCard from './ProjectCard';
+import VerticalLine from './VerticalLine';
+import config from "../config"
+
+const ProjectSection = ()=> {
+
+  return(
+    <Stack id='PROYECTOS' alignItems="center" justifyContent="center">
+      <Heading fontSize={["40px", "40px","60px","60px"]} color="purple.500" py={20} >PROYECTOS</Heading>
+      <ProjectCard 
+      title="Valobrain" 
+      src={config.project1Banner} 
+      tech={config.project1Tech}
+      url={config.project1Url}
+      github={config.project1Github}
+      />
+      <VerticalLine />
+      <ProjectCard 
+      title="My blog" 
+      tech={config.project2Tech}src={config.project2Banner}
+      url={config.project2Url}
+      github={config.project2Github}
+      />
+      <VerticalLine />
+      <ProjectCard 
+      title="My portfolio" 
+      tech={config.project3Tech}
+      src={config.project3Banner}
+      url={config.project3Url}
+      github={config.project3Github}
+      />
+      <VerticalLine />
+      <ProjectCard 
+        title="Gecomm" 
+        tech={config.project4Tech} 
+        src={config.project6Banner}
+        url={config.project6Url}
+        github={config.project1Github}
+      />
+    </Stack>
+  )
+}
+export default ProjectSection
