@@ -1,8 +1,6 @@
 const config = {
   title: "Pablo Ramos",
   description: "Frontend Developer",
-  coverImage: "",
-  avatar: "",
   project1Banner: "/Images/valobrainBanner.jpg",
   project2Banner: "/Images/myBlogBanner.jpg",
   project3Banner: "/Images/myPortfolioBanner.jpg",
