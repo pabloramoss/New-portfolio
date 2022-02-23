@@ -13,7 +13,7 @@ function AsideBar() {
 
   return (
     <Stack py={3} bg="none" pos="fixed" w="100%" zIndex={100}>
-        <Button alignSelf="end" color="white" _hover={{bg:"none"}} bg="none" onClick={onOpen}><FaBars size={30} /></Button>
+        <Button position="absolute" right={0} color="white" _hover={{bg:"none"}} bg="none" onClick={onOpen}><FaBars size={30} /></Button>
           <Drawer placement="right" onClose={onClose} isOpen={isOpen} size="md">
             <DrawerOverlay />
             <DrawerContent bg="gray.800">
