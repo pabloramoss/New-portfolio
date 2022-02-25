@@ -11,7 +11,7 @@ const Header = () => {
               <Box  
                 h="19%"
                 w="15%"
-                bg="blue"
+                /* bg="blue" */
                 position="absolute"
                 right="28%"
                 top="20%"
@@ -23,7 +23,7 @@ const Header = () => {
               <Box  
                 h="6%"
                 w="6%"
-                bg="red"
+                /* bg="red" */
                 position="absolute"
                 right="58%"
                 top="30%"
@@ -35,7 +35,7 @@ const Header = () => {
               <Box  
                 h="17%"
                 w="5%"
-                bg="green"
+                /* bg="green" */
                 position="absolute"
                 right="53%"
                 top="36%"
@@ -47,7 +47,7 @@ const Header = () => {
               <Box  
                 h="5%"
                 w="3%"
-                bg="purple"
+                /* bg="purple" */
                 position="absolute"
                 right="70%"
                 top="20%"

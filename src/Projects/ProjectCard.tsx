@@ -19,22 +19,14 @@ const ProjectCard = (props)=> {
     >
       <Link href={props.url} isExternal>
         <Image 
-        src='https://via.placeholder.com/300x168' //props.src
-        objectFit="cover" 
-        borderTopRadius={["20","20","0","0"]}
-        borderBottomRadius={["0","0","20px","20px"]}
-        display={["flex","flex","none","none"]}
-        me={0}
-        width="100%"
-        />
-        <Image 
         src={props.src} //props.src
         objectFit="cover" 
-        borderTopRadius={["20","20","0","0"]}
-        borderLeftRadius={["0","0","20px","20px"]}
-        display={["none","none","flex","flex"]}
+        borderBottomRightRadius={["0","0","0","0"]}
+        borderBottomLeftRadius={["0","0","20px","20px"]}
+        borderTopLeftRadius={["20","20","20","20"]}
+        borderTopRightRadius={["20","20","0","0"]}
         height="100%"
-        width="400px"
+        width="100%"
         />
       </Link>
       <Stack gap={6} px={["6","6","0","0"]} py={6} justifyContent="space-between" alignItems="start">

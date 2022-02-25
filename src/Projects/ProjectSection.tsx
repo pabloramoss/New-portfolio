@@ -11,15 +11,24 @@ const ProjectSection = ()=> {
       <Heading fontSize={["40px", "40px","60px","60px"]} color="purple.500" py={20} >PROYECTOS</Heading>
       <ProjectCard 
       title="Valobrain" 
-      src={config.project1Banner} 
+      src={config.project1BannerMobile} 
       tech={config.project1Tech}
       url={config.project1Url}
       github={config.project1Github}
       />
       <VerticalLine />
       <ProjectCard 
+        title="Gecomm" 
+        tech={config.project6Tech} 
+        src={config.project6BannerMobile}
+        url={config.project6Url}
+        github={config.project6Github}
+      />
+      <VerticalLine />
+      <ProjectCard 
       title="My blog" 
-      tech={config.project2Tech}src={config.project2Banner}
+      tech={config.project2Tech}
+      src={config.project2BannerMobile}
       url={config.project2Url}
       github={config.project2Github}
       />
@@ -27,18 +36,11 @@ const ProjectSection = ()=> {
       <ProjectCard 
       title="My portfolio" 
       tech={config.project3Tech}
-      src={config.project3Banner}
+      src={config.project3BannerMobile}
       url={config.project3Url}
       github={config.project3Github}
       />
-      <VerticalLine />
-      <ProjectCard 
-        title="Gecomm" 
-        tech={config.project4Tech} 
-        src={config.project6Banner}
-        url={config.project6Url}
-        github={config.project1Github}
-      />
+      
     </Stack>
   )
 }
