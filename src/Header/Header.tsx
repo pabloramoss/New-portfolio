@@ -9,6 +9,7 @@ const Header = () => {
       <Flex>
         <Flex position="absolute">
           <Box zIndex={3} display={["none","flex","flex","flex"]} >
+          <Title />
             <Link href="#PROYECTOS">
               <Box  
                 h="19%"
@@ -71,7 +72,7 @@ const Header = () => {
           </video>
         </Flex>
         <Image display={["none","flex","flex","flex"]} objectFit="scale-down" src='https://via.placeholder.com/1920x1080' />
-        <Title />
+        
       </Flex>
         
   )
