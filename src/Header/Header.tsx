@@ -1,20 +1,22 @@
 import React from "react"
-import {Stack, Flex, Image, Box, Link, Heading} from "@chakra-ui/react"
+import {Flex, Image, Box, Link} from "@chakra-ui/react"
 import config from "../config"
+import Title from "./Title"
 
 const Header = () => {
+
   return (
-      <Flex bg='red'>
+      <Flex>
         <Flex position="absolute">
-          <Box display={["none","flex","flex","flex"]} >
+          <Box zIndex={3} display={["none","flex","flex","flex"]} >
             <Link href="#PROYECTOS">
               <Box  
                 h="19%"
                 w="15%"
                 /* bg="blue" */
                 position="absolute"
-                right="28%"
-                top="20%"
+                right="19%"
+                top="27%"
                 opacity={0.5}
               >
               </Box>
@@ -25,8 +27,8 @@ const Header = () => {
                 w="6%"
                 /* bg="red" */
                 position="absolute"
-                right="58%"
-                top="30%"
+                right="50%"
+                top="38%"
                 opacity={0.5}
               >
               </Box>
@@ -37,30 +39,39 @@ const Header = () => {
                 w="5%"
                 /* bg="green" */
                 position="absolute"
-                right="53%"
-                top="36%"
+                right="45%"
+                top="42%"
                 opacity={0.5}
               >
               </Box>
             </Link>
             <Link href={config.linkedin} isExternal>
               <Box  
-                h="5%"
-                w="3%"
+                h="6%"
+                w="4%"
                 /* bg="purple" */
                 position="absolute"
-                right="70%"
-                top="20%"
+                right="61%"
+                top="27%"
                 opacity={0.5}
               >
               </Box>
             </Link>
           </Box>
-          <Image display={["none","flex","flex","flex"]} objectFit="scale-down" src='/Hero/default.png' />
-          <Image alignSelf="start" justifySelf='center' display={["flex","none","none","none"]} objectFit="scale-down" src='/Hero/default-mobile.jpg' />
+          <video
+          autoPlay
+          loop
+          muted
+          >
+            <source src="/Hero/portfolio.webm" type="video/webm" 
+            style={{
+              width: "100vw",
+            }}
+            />
+          </video>
         </Flex>
-        <Image display={["none","flex","flex","flex"]} objectFit="scale-down" src='/Hero/default.png' />
-        <Image alignSelf="start" justifySelf='center' display={["flex","none","none","none"]} objectFit="scale-down" src='/Hero/default-mobile.jpg' />
+        <Image display={["none","flex","flex","flex"]} objectFit="scale-down" src='https://via.placeholder.com/1920x1080' />
+        <Title />
       </Flex>
         
   )
