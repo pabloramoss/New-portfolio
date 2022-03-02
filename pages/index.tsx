@@ -5,12 +5,14 @@ import AboutMeSection from '../src/AboutMe/AboutMeSection'
 import AsideBar from '../src/AsideBar/AsideBar'
 import Footer from '../src/Footer/Footer'
 import Header from '../src/Header/Header'
+import Title from "../src/Header/Title"
 
 export default function Home () {
   return (
     <Flex direction="column" id='HOME' bg="gray.900">
       <AsideBar />
       <Header />
+      <Title />
       <Container maxW='container.xl'>
         <ProjectSection />
         <ContactSection />
