@@ -18,8 +18,7 @@ const Header = () => {
                   right="19%"
                   top="27%"
                   opacity={0.5}
-                  >
-                </Box>
+                  />
                 </Tooltip>
             </Link>
             <Link href="#CONTACTO">
@@ -32,8 +31,7 @@ const Header = () => {
                   right="50%"
                   top="38%"
                   opacity={0.5}
-                >
-                </Box>
+                />
               </Tooltip>
             </Link>
             <Link href={`#${encodeURI("ACERCA DE MI")}`}>
@@ -46,8 +44,7 @@ const Header = () => {
                   right="45%"
                   top="42%"
                   opacity={0.5}
-                  >
-                </Box>
+                  />
               </Tooltip>
             </Link>
             <Link href={config.linkedin} isExternal>
@@ -60,8 +57,7 @@ const Header = () => {
                   right="61%"
                   top="27%"
                   opacity={0.5}
-                  >
-                </Box>
+                  />
             </Tooltip>
             </Link>
           </Box>

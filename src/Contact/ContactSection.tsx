@@ -6,7 +6,7 @@ import config from "../config"
 const ContactSection = ()=> {
 
   return(
-    <Stack id="CONTACTO" alignItems="center" justifyContent="center">
+    <Stack id="contacto" alignItems="center" justifyContent="center">
       <Heading fontSize={["40px", "40px","60px","60px"]} py={20} color="purple.500">CONTACTO</Heading>
       <Text pb={6} color="white">Puedes contactarme a través de:</Text>
       <Stack direction={["column","column","row","row"]} justifyContent='center' width="150px" spacing={5}>
