@@ -19,13 +19,13 @@ function AsideBar() {
             <DrawerContent bg="gray.800">
             <DrawerCloseButton color="white" size="2xl" h={10} w={10} />
               <DrawerBody>
-                <Stack mt={20} justifyContent="space-between" height="100%">
+                <Stack pt={{base:10, md:20}} justifyContent="space-between" height="100%">
                   <Stack spacing={8}>
                     {menuLinks}
                   </Stack>
-                <Stack spacing={10}>
+                <Stack spacing={5}>
                   <SocialMedia color="white"/>
-                  <Text pb={10} alignSelf="center" color="gray.400">
+                  <Text display={["none","flex","flex","flex"]} pb={10} alignSelf="center" color="gray.400">
                     ©
                     {new Date().getFullYear()}
                     {' '}

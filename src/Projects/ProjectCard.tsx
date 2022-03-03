@@ -34,7 +34,7 @@ const ProjectCard = (props)=> {
           <Link href={props.url} >
             <Heading _hover={{color: "purple.500"}} pe={4} fontSize={["22px","22px","30px","30px",]} color="white">{props.title}</Heading>
           </Link>
-          <Text color="white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </Text>
+          <Text color="white">{props.description}</Text>
           
         </Stack>
         <Stack direction="row" alignItems="center">

@@ -15,6 +15,7 @@ const ProjectSection = ()=> {
       tech={config.project1Tech}
       url={config.project1Url}
       github={config.project1Github}
+      description={config.project1Description}
       />
       <VerticalLine />
       <ProjectCard 
@@ -23,6 +24,7 @@ const ProjectSection = ()=> {
         src={config.project6BannerMobile}
         url={config.project6Url}
         github={config.project6Github}
+        description={config.project2Description}
       />
       <VerticalLine />
       <ProjectCard 
@@ -31,6 +33,7 @@ const ProjectSection = ()=> {
       src={config.project2BannerMobile}
       url={config.project2Url}
       github={config.project2Github}
+      description={config.project3Description}
       />
       <VerticalLine />
       <ProjectCard 
@@ -39,6 +42,7 @@ const ProjectSection = ()=> {
       src={config.project3BannerMobile}
       url={config.project3Url}
       github={config.project3Github}
+      description={config.project4Description}
       />
       
     </Stack>
