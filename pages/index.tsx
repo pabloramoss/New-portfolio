@@ -9,7 +9,7 @@ import Title from "../src/Header/Title"
 
 export default function Home () {
   return (
-    <Flex direction="column" id='HOME' bg="gray.900">
+    <Flex direction="column" id='home' bg="gray.900">
       <AsideBar />
       <Header />
       <Title />

@@ -8,8 +8,8 @@ const Header = () => {
       <Flex display={["none","none","flex","flex"]}>
         <Flex position="absolute">
           <Box zIndex={3} >
-            <Link href="#PROYECTOS">
-              <Tooltip placement="top" label="Proyectos">
+            <Link href="#projects">
+              <Tooltip placement="top" label="Projects">
                 <Box  
                   h="19%"
                   w="15%"
@@ -21,8 +21,8 @@ const Header = () => {
                   />
                 </Tooltip>
             </Link>
-            <Link href="#CONTACTO">
-              <Tooltip placement="top" label="Contacto">
+            <Link href="#contact">
+              <Tooltip placement="top" label="Contact">
                 <Box  
                   h="6%"
                   w="6%"
@@ -34,8 +34,8 @@ const Header = () => {
                 />
               </Tooltip>
             </Link>
-            <Link href={`#${encodeURI("ACERCA DE MI")}`}>
-              <Tooltip placement="top" label="Acerca de mi">
+            <Link href={`#${encodeURI("about me")}`}>
+              <Tooltip placement="top" label="About me">
                 <Box  
                   h="17%"
                   w="5%"

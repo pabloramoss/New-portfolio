@@ -7,8 +7,8 @@ import config from "../config"
 const ProjectSection = ()=> {
 
   return(
-    <Stack id='proyectos' alignItems="center" justifyContent="center">
-      <Heading fontSize={["40px", "40px","60px","60px"]} color="purple.500" py={20} >PROYECTOS</Heading>
+    <Stack id='projects' alignItems="center" justifyContent="center">
+      <Heading fontSize={["40px", "40px","60px","60px"]} color="purple.500" py={20} >PROJECTS</Heading>
       <ProjectCard 
       title="Valobrain" 
       src={config.project1BannerMobile} 

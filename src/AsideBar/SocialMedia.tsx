@@ -1,5 +1,5 @@
 import React from 'react';
-import {HStack, Icon, Heading, IconButton, Link} from "@chakra-ui/react"
+import {HStack, Icon, Link} from "@chakra-ui/react"
 import {
   FaGithub, FaLinkedin, FaTelegram, FaTwitter, 
 } from 'react-icons/fa';
@@ -7,7 +7,7 @@ import {
 const SocialMedia = ({color})=> {
 
   return(
-    <HStack spacing={4} id='Proyectos' alignItems="center" justifyContent="center">
+    <HStack spacing={4} id='projects' alignItems="center" justifyContent="center">
       <Link href="/">
         <Icon _hover={{color:"purple.400"}} h={8} w={8} color={color} as={FaLinkedin} />
       </Link>

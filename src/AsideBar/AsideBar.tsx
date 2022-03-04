@@ -1,14 +1,14 @@
 import React from 'react';
 import {
-  Stack, Heading, Link, Button, Drawer, DrawerOverlay, DrawerBody, DrawerContent, useDisclosure, Divider, Text, Icon, DrawerCloseButton} from '@chakra-ui/react';
+  Stack, Heading, Link, Button, Drawer, DrawerOverlay, DrawerBody, DrawerContent, useDisclosure, Divider, Text, DrawerCloseButton} from '@chakra-ui/react';
 import {
-  FaBars, FaWindowClose,
+  FaBars,
 } from 'react-icons/fa';
 import SocialMedia from './SocialMedia';
 
 function AsideBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const sections = ["home","proyectos","contacto","acerca de mi"]
+  const sections = ["home","projects","contact","about me"]
   const menuLinks = sections.map((section) => <Link key={section} href={`#${encodeURI(section)}`}><Heading _hover={{color:"purple.500"}} fontWeight={400} color="white" fontSize={30} onClick={onClose} my={3} colorScheme="purple">{section.toUpperCase()}<Divider py={2} /></Heading></Link>)
 
   return (

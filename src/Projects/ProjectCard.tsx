@@ -1,4 +1,4 @@
-import { Heading, Icon, Flex,  Image, Link, Stack, Text, Badge, Grid } from "@chakra-ui/react";
+import { Heading, Icon, Flex,  Image, Link, Stack, Text, Badge, Grid, AspectRatio } from "@chakra-ui/react";
 import React from 'react';
 import { FaGithub } from "react-icons/fa";
 import {motion} from "framer-motion"
@@ -27,11 +27,12 @@ const ProjectCard = (props)=> {
         borderTopRightRadius={["20","20","0","0"]}
         height="100%"
         width="100%"
+        minW={240}
         />
       </Link>
       <Stack gap={6} px={["6","6","0","0"]} py={6} justifyContent="space-between" alignItems="start">
         <Stack gap={3} justifyContent="start" alignItems="start">
-          <Link href={props.url} >
+          <Link _hover={{textDecoration: "none"}} href={props.url} >
             <Heading _hover={{color: "purple.500"}} pe={4} fontSize={["22px","22px","30px","30px",]} color="white">{props.title}</Heading>
           </Link>
           <Text color="white">{props.description}</Text>

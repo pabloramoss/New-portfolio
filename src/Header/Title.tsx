@@ -27,10 +27,11 @@ const Title: React.FC = () => {
         <Heading 
         color="white" 
         size="xl"
-        >Hola, soy <Box 
+        >Hello, I am <Box 
         as="span" 
         bgGradient='linear(to-r, #a956ff, #b975ff)' 
         bgClip='text'
+        fontWeight={800}
         >
           Pablo
           </Box>
@@ -51,7 +52,7 @@ const Title: React.FC = () => {
             colorScheme='purple' 
             width="200px" 
             >
-              VER PROYECTOS
+              MY PROJECTS
             </Button>
           </MotionBox>
         </Link>
