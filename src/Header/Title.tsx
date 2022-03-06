@@ -43,7 +43,7 @@ const Title: React.FC = () => {
         transition={{delay:2, duration: 1.5}} 
         fontSize='xl'>Frontend developer</MotionText>
         </Stack>
-        <Link href="#PROYECTOS">
+        <Link href="#projects">
           <MotionBox 
           initial={{opacity:0}}
           animate={{opacity:1}}

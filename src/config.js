@@ -48,7 +48,7 @@ const config = {
   about: "I am a frontend developer, passionate for learning about any kind of technology, always trying to improve my skills challenging myself. Currently working with React (especially with NextJS). Hope you found here who you are looking for. Greetings!",
   hardTech: "HTML, CSS, Javascript, Typescript, React, Next.js, Chakra-UI, Framer-motion, MongoDB, Git, Github, Figma, Photoshop.",
   softTech: "Comunication, teamwork, flexibility, creativity, time management, planification.",
-  future: "Mi goal is keep improving my frontend and UI/UX skills. Also, I would like to learn everything related to web3 like Solidity, Web3.js, Ether.js, etc.",
+  future: "My goal is keep improving my frontend and UI/UX skills. Also, I would like to learn everything related to web3 like Solidity, Web3.js, Ether.js, etc.",
   telegram: "https://tttttt.me/pablooramoss",
   cv: ""
 };

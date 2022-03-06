@@ -7,7 +7,11 @@ import config from "../config"
 const ProjectSection = ()=> {
 
   return(
-    <Stack id='projects' alignItems="center" justifyContent="center">
+    <Stack 
+    id='projects' 
+    alignItems="center" 
+    justifyContent="center"
+    >
       <Heading fontSize={["40px", "40px","60px","60px"]} color="purple.500" py={20} >PROJECTS</Heading>
       <ProjectCard 
       title="Valobrain" 

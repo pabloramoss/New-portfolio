@@ -1,10 +1,13 @@
 import { Heading, Icon, Flex,  Image, Link, Stack, Text, Badge, Grid, AspectRatio } from "@chakra-ui/react";
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaGithub } from "react-icons/fa";
-import {motion} from "framer-motion"
+import { motion, useAnimation} from "framer-motion"
+import {useInView} from "react-intersection-observer"
 
 const ProjectCard = (props)=> {
   const MotionFlex = motion(Flex)
+
+
   return(
     <MotionFlex 
     whileHover={{ 
@@ -19,7 +22,7 @@ const ProjectCard = (props)=> {
     >
       <Link href={props.url} isExternal>
         <Image 
-        src={props.src} //props.src
+        src={props.src}
         objectFit="cover" 
         borderBottomRightRadius={["0","0","0","0"]}
         borderBottomLeftRadius={["0","0","20px","20px"]}
@@ -43,11 +46,11 @@ const ProjectCard = (props)=> {
           href={props.github} 
           isExternal
           >
-            <Icon color="white" _hover={{color: "purple.500"}} as={FaGithub} w={8} h={8}>icon</Icon>
+            <Icon color="white" _hover={{color: "purple.500"}} as={FaGithub} w={8} h={8} />
           </Link>
           <Grid 
-        templateColumns='repeat(4, 1fr)' 
-        gap={3}>
+          templateColumns='repeat(4, 1fr)' 
+          gap={3}>
           {props.tech.map((item, index)=><Badge justifySelf="center" key={index}>{item}</Badge>)}
         </Grid>
         </Stack>
