@@ -37,12 +37,12 @@ const Header = () => {
             <Link href={`#${encodeURI("about me")}`}>
               <Tooltip placement="top" label="About me">
                 <Box  
-                  h="17%"
+                  h="21%"
                   w="5%"
                   /* bg="green" */
                   position="absolute"
                   right="45%"
-                  top="42%"
+                  top="38%"
                   opacity={0.5}
                   />
               </Tooltip>
