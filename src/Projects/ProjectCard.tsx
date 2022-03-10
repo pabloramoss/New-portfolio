@@ -1,15 +1,15 @@
-import { Heading, Icon, Flex,  Image, Link, Stack, Text, Badge, Grid, AspectRatio } from "@chakra-ui/react";
+import { Heading, Icon, Flex,  Image, Link, Stack, Text, Badge, Grid, AspectRatio, GridItem } from "@chakra-ui/react";
 import React, { useEffect } from 'react';
 import { FaGithub } from "react-icons/fa";
 import { motion, useAnimation} from "framer-motion"
 import {useInView} from "react-intersection-observer"
 
 const ProjectCard = (props)=> {
-  const MotionFlex = motion(Flex)
+  const MotionGrid = motion(Grid)
 
 
   return(
-    <MotionFlex 
+    <MotionGrid 
     whileHover={{ 
       scale: 1.05, 
       boxShadow: "0 8px 32px 0 rgba(248, 186, 255, 0.25)" }} 
@@ -17,45 +17,55 @@ const ProjectCard = (props)=> {
     direction={["column","column","row","row"]} 
     className='card' 
     rounded={20}
-    w={["90vw","90vw","auto","auto"]}
     maxW="800px"
+    gridTemplateAreas = {{
+      base: `
+      "image image" 
+      "conten content"`, 
+      sm: `
+      "image content" 
+      "image content"` 
+      }}
     >
-      <Link href={props.url} isExternal>
-        <Image 
-        src={props.src}
-        objectFit="cover" 
-        borderBottomRightRadius={["0","0","0","0"]}
-        borderBottomLeftRadius={["0","0","20px","20px"]}
-        borderTopLeftRadius={["20","20","20","20"]}
-        borderTopRightRadius={["20","20","0","0"]}
-        height="100%"
-        width="100%"
-        minW={240}
-        />
-      </Link>
-      <Stack gap={6} px={["6","6","0","0"]} py={6} justifyContent="space-between" alignItems="start">
-        <Stack gap={3} justifyContent="start" alignItems="start">
-          <Link _hover={{textDecoration: "none"}} href={props.url} >
-            <Heading _hover={{color: "purple.500"}} pe={4} fontSize={["22px","22px","30px","30px",]} color="white">{props.title}</Heading>
-          </Link>
-          <Text color="white">{props.description}</Text>
-          
+      <GridItem gridArea="image">
+        <Link href={props.url} isExternal>
+          <Image 
+          src={props.src}
+          objectFit="cover" 
+          borderBottomRightRadius={["0","0","0","0"]}
+          borderBottomLeftRadius={["0","20","20","20"]}
+          borderTopLeftRadius={["20","20","20","20"]}
+          borderTopRightRadius={["20","0","0","0"]}
+          width="100%"
+          height="100%"
+          minW={240}
+          />
+        </Link>
+      </GridItem>
+      <GridItem gridArea="content" px={["6","0","0","0"]} py={6}>
+        <Stack height="100%" justifyContent="space-between">
+          <Stack gap={3}>
+            <Link _hover={{textDecoration: "none"}} href={props.url} >
+              <Heading _hover={{color: "purple.500"}} pe={4} fontSize={["22px","22px","30px","30px",]} color="white">{props.title}</Heading>
+            </Link>
+            <Text color="white">{props.description}</Text>
+          </Stack>
+          <Stack mt={4} direction="row" alignItems="center">
+            <Link
+            href={props.github} 
+            isExternal
+            >
+              <Icon color="white" _hover={{color: "purple.500"}} as={FaGithub} w={8} h={8} />
+            </Link>
+            <Grid 
+            templateColumns='repeat(4, 1fr)' 
+            gap={3}>
+            {props.tech.map((item, index)=><Badge justifySelf="center" key={index}>{item}</Badge>)}
+          </Grid>
+          </Stack>
         </Stack>
-        <Stack direction="row" alignItems="center">
-          <Link
-          href={props.github} 
-          isExternal
-          >
-            <Icon color="white" _hover={{color: "purple.500"}} as={FaGithub} w={8} h={8} />
-          </Link>
-          <Grid 
-          templateColumns='repeat(4, 1fr)' 
-          gap={3}>
-          {props.tech.map((item, index)=><Badge justifySelf="center" key={index}>{item}</Badge>)}
-        </Grid>
-        </Stack>
-      </Stack>
-    </MotionFlex>
+      </GridItem>
+    </MotionGrid>
   )
 }
 export default ProjectCard
