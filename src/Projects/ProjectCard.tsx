@@ -1,8 +1,7 @@
-import { Heading, Icon, Flex,  Image, Link, Stack, Text, Badge, Grid, AspectRatio, GridItem } from "@chakra-ui/react";
-import React, { useEffect } from 'react';
+import { Heading, Icon, Image, Link, Stack, Text, Badge, Grid, GridItem } from "@chakra-ui/react";
+import React from 'react';
 import { FaGithub } from "react-icons/fa";
-import { motion, useAnimation} from "framer-motion"
-import {useInView} from "react-intersection-observer"
+import { motion} from "framer-motion"
 
 const ProjectCard = (props)=> {
   const MotionGrid = motion(Grid)
@@ -42,7 +41,7 @@ const ProjectCard = (props)=> {
           />
         </Link>
       </GridItem>
-      <GridItem gridArea="content" px={["6","0","0","0"]} py={6}>
+      <GridItem gridArea="content" px={["6","4","4","4"]} py={6}>
         <Stack height="100%" justifyContent="space-between">
           <Stack gap={3}>
             <Link _hover={{textDecoration: "none"}} href={props.url} >
@@ -57,11 +56,11 @@ const ProjectCard = (props)=> {
             >
               <Icon color="white" _hover={{color: "purple.500"}} as={FaGithub} w={8} h={8} />
             </Link>
-            <Grid 
-            templateColumns='repeat(4, 1fr)' 
-            gap={3}>
+            <Stack direction="row" 
+            width="100%"
+            >
             {props.tech.map((item, index)=><Badge justifySelf="center" key={index}>{item}</Badge>)}
-          </Grid>
+          </Stack>
           </Stack>
         </Stack>
       </GridItem>
