@@ -14,21 +14,21 @@ const ProjectSection = ()=> {
     >
       <Heading fontSize={["40px", "40px","60px","60px"]} color="purple.500" py={20} >PROJECTS</Heading>
       <ProjectCard 
-      title="Valobrain" 
-      src={config.project1BannerMobile} 
-      tech={config.project1Tech}
-      url={config.project1Url}
-      github={config.project1Github}
-      description={config.project1Description}
-      />
-      <VerticalLine />
-      <ProjectCard 
         title="Gecomm" 
         tech={config.project6Tech} 
         src={config.project6BannerMobile}
         url={config.project6Url}
         github={config.project6Github}
         description={config.project2Description}
+      />
+      <VerticalLine />
+      <ProjectCard 
+      title="Valobrain" 
+      src={config.project1BannerMobile} 
+      tech={config.project1Tech}
+      url={config.project1Url}
+      github={config.project1Github}
+      description={config.project1Description}
       />
       <VerticalLine />
       <ProjectCard 
