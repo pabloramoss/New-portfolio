@@ -1,5 +1,5 @@
 import React from "react";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 import { Stack, Box, Flex, Heading, Button, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
@@ -51,6 +51,9 @@ const Title: React.FC = () => {
             <Button 
             colorScheme='purple' 
             width="200px" 
+            rounded="none"
+            border="2px solid transparent" 
+            _hover={{bg:"none", borderColor:"purple.500"}}
             >
               MY PROJECTS
             </Button>

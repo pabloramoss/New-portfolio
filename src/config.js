@@ -1,42 +1,13 @@
+/*  project 1 = gecomm
+    project 2 = valobrain
+    project 3 = torito bar
+    project 4 = my blog
+    project 5 = my portfolio
+    project 6 = barber
+ */
 const config = {
   title: "Pablo Ramos",
   description: "Frontend Developer",
-  project1Banner: "/Images/valobrainBanner.jpg",
-  project2Banner: "/Images/myBlogBanner.jpg",
-  project3Banner: "/Images/myPortfolioBanner.jpg",
-  project4Banner: "/Images/giuseppeBanner.jpg",
-  project5Banner: "https://via.placeholder.com/300",
-  project6Banner: "/Images/gecommBanner.jpg",
-  project1BannerMobile: "/Images/valobrainBanner.jpg",
-  project2BannerMobile: "/Images/myBlogBanner.jpg",
-  project3BannerMobile: "/Images/myPortfolioBanner.jpg",
-  project4BannerMobile: "/Images/giuseppeBanner.jpg",
-  project5BannerMobile: "https://via.placeholder.com/300",
-  project6BannerMobile: "/Images/gecommBanner.jpg",
-  project1Github: "https://github.com/pabloramoss/valo-brain",
-  project2Github: "https://github.com/pabloramoss/my-blog",
-  project3Github: "https://github.com/pabloramoss/New-portfolio",
-  project4Github: "https://via.placeholder.com/300",
-  project5Github: "https://via.placeholder.com/300",
-  project6Github: "https://github.com/pabloramoss/Gecomm",
-  project1Url: "https://valobrain.vercel.app/",
-  project2Url: "https://rpablog.vercel.app/",
-  project3Url: "https://portfoliopabloramos.vercel.app",
-  project4Url: "https://via.placeholder.com/300",
-  project5Url: "https://via.placeholder.com/300",
-  project6Url: "https://ecommerce-pablo.vercel.app/",
-  project1Tech: ["REACT JS","CHAKRA-UI", "YOUTUBE API"],
-  project2Tech: ["NEXT.JS", "CHAKRA-UI","MARKDOWN"],
-  project3Tech: ["NEXTS.JS", "CHAKRA-UI", "FRAMER-MOTION"],
-  project4Tech: ["NEXT.JS", "CHAKRA-UI","AXIOS", "SSR"],
-  project5Tech: ["NEXT.JS", "CHAKRA-UI","AXIOS", "SSR"],
-  project6Tech: ["NEXT.JS", "CHAKRA-UI","AXIOS", "SSR"],
-  project1Description: "Gaming app for Valorant which consists in a video search engine from a specific YouTube channel.",
-  project2Description: "Zero cost e-commerce, since it has a database of products and sales made in Google Sheet.",
-  project3Description: "Own blog where I share my experiences working with different technologies.",
-  project4Description: "My humble portfolio, made it with love. 3D with SketchUp, rendered with TwinMotion, animations with After Effects",
-  project5Description: "",
-  project6Description: "",
   siteUrl: "https://portfoliopabloramos.vercel.app",
   twitter: "https://twitter.com/rpablo_dev",
   github: "https://github.com/pabloramoss",
@@ -53,4 +24,51 @@ const config = {
   cv: ""
 };
 
+const projects = [{
+  name: "Gecomm",
+  description: "Zero cost e-commerce, since it has a database of products and sales made in Google Sheet.",
+  url: "https://ecommerce-pablo.vercel.app/",
+  github: "https://github.com/pabloramoss/Gecomm",
+  image: "/Images/gecommBanner.jpg",
+  tech: ["NEXT.JS", "CHAKRA-UI","AXIOS", "SSR"],
+
+},
+{
+  name: "Valobrain",
+  description: "Gaming app for Valorant which consists in a video search engine from a specific YouTube channel.",
+  url: "https://valobrain.vercel.app/",
+  github: "https://github.com/pabloramoss/stratcall",
+  image: "/Images/valobrainBanner.jpg",
+  tech: ["REACT JS","CHAKRA-UI", "YOUTUBE API"],
+
+},
+{
+  name: "El Torito Bar",
+  description: "App with mobile design for a restaurant with a digital menu where you can make orders.",
+  url: "https://eltoritobar.vercel.app",
+  github: "https://github.com/pabloramoss/El-toro-bar",
+  image: "/Images/toritoBanner.jpg",
+  tech: ["NEXT.JS", "CHAKRA-UI","AXIOS", "SSR"],
+
+},
+{
+  name: "My blog",
+  description: "Own blog where I share my experiences working with different technologies.",
+  url: "https://rpablog.vercel.app/",
+  github: "https://github.com/pabloramoss/my-blog",
+  image: "/Images/myBlogBanner.jpg",
+  tech: ["NEXT.JS", "CHAKRA-UI","MARKDOWN"],
+
+},
+{
+  name: "My portfolio",
+  description: "My humble portfolio, made it with love. 3D with SketchUp, rendered with TwinMotion, animations with After Effects",
+  url: "https://portfoliopabloramos.vercel.app",
+  github: "https://github.com/pabloramoss/New-portfolio",
+  image: "/Images/myPortfolioBanner.jpg",
+  tech: ["NEXTS.JS", "CHAKRA-UI", "FRAMER-MOTION"],
+
+},
+]
+export {projects}
 export default config;

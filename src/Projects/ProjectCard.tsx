@@ -1,4 +1,14 @@
-import { Heading, Icon, Image, Link, Stack, Text, Badge, Grid, GridItem } from "@chakra-ui/react";
+import { 
+  Heading, 
+  Icon, 
+  Image, 
+  Link, 
+  Stack, 
+  Text, 
+  Badge, 
+  Grid, 
+  GridItem 
+} from "@chakra-ui/react";
 import React from 'react';
 import { FaGithub } from "react-icons/fa";
 import { motion} from "framer-motion"
@@ -15,7 +25,6 @@ const ProjectCard = (props)=> {
     gap={3}
     direction={["column","column","row","row"]} 
     className='card' 
-    rounded={20}
     maxW="800px"
     gridTemplateAreas = {{
       base: `
@@ -31,10 +40,6 @@ const ProjectCard = (props)=> {
           <Image 
           src={props.src}
           objectFit="cover" 
-          borderBottomRightRadius={["0","0","0","0"]}
-          borderBottomLeftRadius={["0","20","20","20"]}
-          borderTopLeftRadius={["20","20","20","20"]}
-          borderTopRightRadius={["20","0","0","0"]}
           width="100%"
           height="100%"
           minW={240}
@@ -44,7 +49,7 @@ const ProjectCard = (props)=> {
       <GridItem gridArea="content" px={["6","4","4","4"]} py={6}>
         <Stack height="100%" justifyContent="space-between">
           <Stack gap={3}>
-            <Link _hover={{textDecoration: "none"}} href={props.url} >
+            <Link _hover={{textDecoration: "none"}} href={props.url} isExternal>
               <Heading _hover={{color: "purple.500"}} pe={4} fontSize={["22px","22px","30px","30px",]} color="white">{props.title}</Heading>
             </Link>
             <Text color="white">{props.description}</Text>

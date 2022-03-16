@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
     <link rel="icon" href="/favicon-32x32.png" />
   </Head>
   <ChakraProvider theme={theme}>
-    <Component {...pageProps} />
+    <Component {...pageProps}  />
   </ChakraProvider>
   </>
   )

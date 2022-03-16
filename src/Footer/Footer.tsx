@@ -5,10 +5,10 @@ import SocialMedia from "../AsideBar/SocialMedia";
 const Footer = ()=> {
 
   return(
-    <Stack justifyContent="center" bg="white" w="100%" h="200px">
+    <Stack justifyContent="center" className="card" w="100%" h="150px">
       <Stack>
-        <SocialMedia color="black" />
-        <Text pb={10} alignSelf="center">
+        <SocialMedia color="gray.400" />
+        <Text alignSelf="center" color="gray.400">
           ©
           {new Date().getFullYear()}
           {' '}

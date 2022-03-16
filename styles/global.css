@@ -1,7 +1,16 @@
 .card {
   background: rgba( 255, 255, 255, 0.05 );
-  /* box-shadow: 0 8px 32px 0 rgba(120, 41, 128, 0.25); 
-  backdrop-filter: blur( 9px );
-  -webkit-backdrop-filter: blur( 9px );*/
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #383838;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #545454;
+  border-radius: 10px;
 }

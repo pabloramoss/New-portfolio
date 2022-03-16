@@ -6,13 +6,13 @@ const VerticalLine = ()=> {
 
   return(
     <Stack py={10}>
-      <Icon color="purple.500" as={FaCircle}></Icon>
+      <Icon alignSelf="center" color="purple.500" as={FaCircle}></Icon>
       <Slider minH={100} orientation='vertical' aria-label="slider" isDisabled value={100}>
         <SliderTrack>
           <SliderFilledTrack bg="purple.500" />
         </SliderTrack>
       </Slider>
-      <Icon color="purple.500" as={FaCircle}></Icon>
+      <Icon alignSelf="center" color="purple.500" as={FaCircle}></Icon>
     </Stack>
   )
 }
