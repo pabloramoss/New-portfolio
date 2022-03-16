@@ -16,6 +16,8 @@ const ContactSection = ()=> {
       spacing={5}>
         <Link _hover={{textDecoration: "none"}} href={config.linkedin} isExternal>
           <Button 
+          h="100%"
+          alignItems="center"
           rounded="none" 
           border="2px solid transparent" 
           _hover={{bg:"none", borderColor:"purple.500"}} 
@@ -28,6 +30,8 @@ const ContactSection = ()=> {
         </Link>
         <Link _hover={{textDecoration: "none"}} href={config.telegram} isExternal>
           <Button 
+          h="100%"
+          alignItems="center"
           rounded="none" 
           border="2px solid transparent" 
           _hover={{bg:"none", borderColor:"purple.500"}} 

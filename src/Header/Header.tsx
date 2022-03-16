@@ -16,7 +16,7 @@ const Header = () => {
                   /* bg="blue" */
                   position="absolute"
                   right="19%"
-                  top="27%"
+                  top="22%"
                   opacity={0.5}
                   />
                 </Tooltip>
@@ -29,7 +29,7 @@ const Header = () => {
                   /* bg="red" */
                   position="absolute"
                   right="50%"
-                  top="38%"
+                  top="33%"
                   opacity={0.5}
                 />
               </Tooltip>
@@ -42,7 +42,7 @@ const Header = () => {
                   /* bg="green" */
                   position="absolute"
                   right="45%"
-                  top="38%"
+                  top="33%"
                   opacity={0.5}
                   />
               </Tooltip>
@@ -55,7 +55,7 @@ const Header = () => {
                   /* bg="purple" */
                   position="absolute"
                   right="61%"
-                  top="27%"
+                  top="21%"
                   opacity={0.5}
                   />
             </Tooltip>
