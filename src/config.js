@@ -8,7 +8,7 @@
 const config = {
   title: "Pablo Ramos",
   description: "Frontend Developer",
-  siteUrl: "https://portfoliopabloramos.vercel.app",
+  siteUrl: "https://pabloramos.vercel.app",
   twitter: "https://twitter.com/rpablo_dev",
   github: "https://github.com/pabloramoss",
   linkedin: "https://www.linkedin.com/in/pabloramoss/",
@@ -63,7 +63,7 @@ const projects = [{
 {
   name: "My portfolio",
   description: "My humble portfolio, made it with love. 3D with SketchUp, rendered with TwinMotion, animations with After Effects",
-  url: "https://portfoliopabloramos.vercel.app",
+  url: "https://pabloramos.vercel.app",
   github: "https://github.com/pabloramoss/New-portfolio",
   image: "/Images/myPortfolioBanner.jpg",
   tech: ["NEXTS.JS", "CHAKRA-UI", "FRAMER-MOTION"],
