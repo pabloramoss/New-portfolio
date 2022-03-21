@@ -43,20 +43,20 @@ function AsideBar() {
                   <Stack spacing={8}>
                     {menuLinks}
                   </Stack>
-                <Stack pb={{base: 5, md: 0}} spacing={5}>
-                  <SocialMedia color="gray.400"/>
-                  <Text 
-                  display={["none","flex","flex","flex"]} 
-                  pb={10}
-                  alignSelf="center" 
-                  color="gray.400"
-                  >
-                    ©
-                    {new Date().getFullYear()}
-                    {' '}
-                    Pablo Ramos
-                  </Text>
-                </Stack>
+                  <Stack pb={{base: 5, md: 0}} spacing={5}>
+                    <SocialMedia color="gray.400"/>
+                    <Text 
+                    display={["none","flex","flex","flex"]} 
+                    pb={10}
+                    alignSelf="center" 
+                    color="gray.400"
+                    >
+                      ©
+                      {new Date().getFullYear()}
+                      {' '}
+                      Pablo Ramos
+                    </Text>
+                  </Stack>
                 </Stack>
               </DrawerBody>
             </DrawerContent>

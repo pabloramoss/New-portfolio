@@ -72,8 +72,7 @@ const Header = () => {
             />
           </video>
         </Flex>
-        <Image display={["none","flex","flex","flex"]} objectFit="scale-down" src='/Hero/Loading.png' />
-        
+        <Box w="100vw" h="100vh" />
       </Flex>
         
   )

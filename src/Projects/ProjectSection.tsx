@@ -12,6 +12,7 @@ const ProjectSection = ()=> {
     id='projects' 
     alignItems="center" 
     justifyContent="center"
+    pt={40}
     >
       <Heading fontSize={["40px", "40px","60px","60px"]} color="purple.500" py={20} >PROJECTS</Heading>
       <VerticalLine />
