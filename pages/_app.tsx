@@ -6,14 +6,14 @@ import "../styles/global.css"
 function MyApp({ Component, pageProps }) {
   return (
   <>
-  <Head>
-    <title>Pablo Ramos</title>
-    <meta name="Pablo Ramos frontend developer" content="Portfolio Pablo Ramos" />
-    <link rel="icon" href="/favicon-32x32.png" />
-  </Head>
-  <ChakraProvider theme={theme}>
-    <Component {...pageProps}  />
-  </ChakraProvider>
+    <Head>
+      <title>Pablo Ramos</title>
+      <meta name="Pablo Ramos frontend developer" content="Portfolio Pablo Ramos" />
+      <link rel="icon" href="/favicon-32x32.png" />
+    </Head>
+    <ChakraProvider theme={theme}>
+      <Component {...pageProps}  />
+    </ChakraProvider>
   </>
   )
 }

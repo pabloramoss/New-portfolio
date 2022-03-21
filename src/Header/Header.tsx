@@ -66,11 +66,9 @@ const Header = () => {
           loop
           muted
           >
-            
-            <source src="/Hero/portfolio.webm" type="video/webm" 
-            style={{
-              width: "100vw",
-            }}
+            <source 
+            src="/Hero/portfolio.webm" 
+            type="video/webm" 
             />
           </video>
         </Flex>

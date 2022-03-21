@@ -14,3 +14,7 @@
   background-color: #545454;
   border-radius: 10px;
 }
+
+source {
+  width: "100vw";
+}

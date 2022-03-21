@@ -12,9 +12,7 @@ import {
   Text, 
   DrawerCloseButton
 } from '@chakra-ui/react';
-import {
-  FaBars,
-} from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import SocialMedia from './SocialMedia';
 import { motion } from 'framer-motion';
 
@@ -26,8 +24,17 @@ function AsideBar() {
     scale: 1.02}}  _hover={{color:"purple.500"}} fontWeight={400} color="white" fontSize={30} onClick={onClose} my={3} colorScheme="purple">{section.toUpperCase()}</MotionHeading><Divider py={2} /></Link>)
     
   return (
-    <Stack py={3} bg="none" pos="fixed" w="100%" zIndex={100}>
-        <Button position="absolute" right={0} color="white" _hover={{bg:"none"}} bg="none" onClick={onOpen}><FaBars size={30} /></Button>
+    <Stack className='asidebar' py={3} bg="none" pos="fixed" w="100%" zIndex={100}>
+        <Button 
+        position="absolute" 
+        right={0} 
+        color="white" 
+        _hover={{bg:"none"}} 
+        bg="none" 
+        onClick={onOpen}
+        >
+          <FaBars size={30} />
+        </Button>
           <Drawer placement="right" onClose={onClose} isOpen={isOpen} size="md">
             <DrawerContent bg="none" sx={{ backdropFilter: "blur(16px) brightness(40%)"}}>
             <DrawerCloseButton color="white" size="2xl" h={10} w={10} />
@@ -38,7 +45,12 @@ function AsideBar() {
                   </Stack>
                 <Stack pb={{base: 5, md: 0}} spacing={5}>
                   <SocialMedia color="gray.400"/>
-                  <Text display={["none","flex","flex","flex"]} pb={10} alignSelf="center" color="gray.400">
+                  <Text 
+                  display={["none","flex","flex","flex"]} 
+                  pb={10}
+                  alignSelf="center" 
+                  color="gray.400"
+                  >
                     ©
                     {new Date().getFullYear()}
                     {' '}
