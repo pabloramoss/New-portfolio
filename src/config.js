@@ -29,7 +29,7 @@ const projects = [{
   url: "https://ecommerce-pablo.vercel.app/",
   github: "https://github.com/pabloramoss/Gecomm",
   image: "/Images/gecommBanner.jpg",
-  tech: ["NEXT.JS", "CHAKRA-UI","AXIOS", "SSR"],
+  tech: ["NEXT.JS", "CHAKRA-UI", "SSR"],
 
 },
 {
@@ -47,7 +47,7 @@ const projects = [{
   url: "https://eltoritobar.vercel.app",
   github: "https://github.com/pabloramoss/El-toro-bar",
   image: "/Images/toritoBanner.jpg",
-  tech: ["NEXT.JS", "CHAKRA-UI","AXIOS", "SSR"],
+  tech: ["TYPESCRIPT", "NEXT.JS", "CHAKRA-UI"],
 
 },
 {
@@ -65,9 +65,9 @@ const projects = [{
   url: "https://pabloramos.vercel.app",
   github: "https://github.com/pabloramoss/New-portfolio",
   image: "/Images/myPortfolioBanner.jpg",
-  tech: ["NEXTS.JS", "CHAKRA-UI", "FRAMER-MOTION"],
+  tech: ["NEXTS.JS", "CHAKRA-UI"],
 
 },
 ]
-export {projects}
+export { projects }
 export default config;

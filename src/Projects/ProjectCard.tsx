@@ -61,10 +61,8 @@ const ProjectCard = (props)=> {
             >
               <Icon color="white" _hover={{color: "purple.500"}} as={FaGithub} w={8} h={8} />
             </Link>
-            <Stack direction="row" 
-            width="100%"
-            >
-            {props.tech.map((item, index)=><Badge justifySelf="center" key={index}>{item}</Badge>)}
+            <Stack direction="row" flexWrap="wrap" width="100%" gap={3} spacing={0} >
+              {props.tech.map((item, index)=><Badge justifySelf="center" key={index}>{item}</Badge>)}
           </Stack>
           </Stack>
         </Stack>

@@ -21,7 +21,7 @@ function AsideBar() {
   const sections = ["home","projects","contact","about me"]
   const MotionHeading = motion(Heading)
   const menuLinks = sections.map((section) => <Link _hover={{textDecoration: "none"}} key={section} href={`#${encodeURI(section)}`}><MotionHeading whileHover={{ 
-    scale: 1.02}}  _hover={{color:"purple.500"}} fontWeight={400} color="white" fontSize={30} onClick={onClose} my={3} colorScheme="purple">{section.toUpperCase()}</MotionHeading><Divider py={2} /></Link>)
+    scale: 1.02}}  _hover={{color:"purple.400"}} fontWeight={400} color="white" fontSize={30} onClick={onClose} my={3} colorScheme="purple">{section.toUpperCase()}</MotionHeading><Divider py={2} /></Link>)
     
   return (
     <Stack className='asidebar' py={3} bg="none" pos="fixed" w="100%" zIndex={100}>
