@@ -11,11 +11,10 @@ import {
 } from "@chakra-ui/react";
 import React from 'react';
 import { FaGithub } from "react-icons/fa";
-import { motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 const ProjectCard = (props)=> {
   const MotionGrid = motion(Grid)
-
 
   return(
     <MotionGrid 
@@ -50,7 +49,14 @@ const ProjectCard = (props)=> {
         <Stack height="100%" justifyContent="space-between">
           <Stack gap={3}>
             <Link _hover={{textDecoration: "none"}} href={props.url} isExternal>
-              <Heading _hover={{color: "purple.500"}} pe={4} fontSize={["22px","22px","30px","30px",]} color="white">{props.title}</Heading>
+              <Heading 
+              _hover={{color: "cyan"}} 
+              pe={4} 
+              fontSize={["22px","22px","30px","30px",]} 
+              color="white"
+              >
+                {props.title}
+              </Heading>
             </Link>
             <Text color="white">{props.description}</Text>
           </Stack>
@@ -59,11 +65,23 @@ const ProjectCard = (props)=> {
             href={props.github} 
             isExternal
             >
-              <Icon color="white" _hover={{color: "purple.500"}} as={FaGithub} w={8} h={8} />
+              <Icon 
+              color="white" 
+              _hover={{color: "cyan.500"}} 
+              as={FaGithub} 
+              w={8} 
+              h={8} 
+              />
             </Link>
-            <Stack direction="row" flexWrap="wrap" width="100%" gap={3} spacing={0} >
+            <Stack 
+            direction="row" 
+            flexWrap="wrap" 
+            width="100%" 
+            gap={3} 
+            spacing={0}
+            >
               {props.tech.map((item, index)=><Badge justifySelf="center" key={index}>{item}</Badge>)}
-          </Stack>
+            </Stack>
           </Stack>
         </Stack>
       </GridItem>

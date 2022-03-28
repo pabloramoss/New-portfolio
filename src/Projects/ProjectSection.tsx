@@ -1,9 +1,8 @@
 import React from 'react';
-import {Stack, Heading,} from "@chakra-ui/react"
+import { Stack, Heading } from "@chakra-ui/react"
 import ProjectCard from './ProjectCard';
 import VerticalLine from './VerticalLine';
-import config from "../config"
-import {projects} from "../config"
+import { projects } from "../config"
 
 const ProjectSection = ()=> {
 
@@ -14,7 +13,7 @@ const ProjectSection = ()=> {
     justifyContent="center"
     pt={40}
     >
-      <Heading fontSize={["40px", "40px","60px","60px"]} color="purple.500" py={20} >PROJECTS</Heading>
+      <Heading fontSize={["40px", "40px","60px","60px"]} color="cyan" py={20} >PROJECTS</Heading>
       <VerticalLine />
       {projects.map(project=> 
         <Stack key={project.name}>

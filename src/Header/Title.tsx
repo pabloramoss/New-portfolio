@@ -1,7 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion"
-import { Stack, Box, Flex, Heading, Button, Text } from "@chakra-ui/react";
-import Link from "next/link";
+import { 
+  Stack, 
+  Box, 
+  Flex, 
+  Heading,
+  Button, 
+  Text,
+  Link
+} from "@chakra-ui/react";
 
 const Title: React.FC = () => {
   const MotionStack = motion(Stack)
@@ -10,27 +17,25 @@ const Title: React.FC = () => {
 
   return (
     <MotionStack 
-    position={["relative","relative","absolute","absolute"]} 
-    height="100vh" 
+    position="absolute"
     initial={{opacity:0}}
       animate={{opacity:1}}
       transition={{delay:1, duration: 1.5}}
+    left={{base:"26vw", md:"30vw"}}
+    top={{base:"0%", md:"14vw"}}
+    mt={{base:"30vh", md:"0"}}
     >
       <Flex 
       direction="column" 
-      height="60vh" 
-      gap={6} 
-      ms={{base:"0", md:"10vw"}}  
-      pt="300px" 
-      alignItems={{base:"center", md:"flex-start"}}>
-        <Stack spacing={3}>
+      gap={0}
+      >
+        <Stack spacing={0}>
           <Heading 
           color="white" 
-          size="xl"
+          fontSize={{base:"2xl", md:"2vw"}}
           >Hello, I am <Box 
           as="span" 
-          bgGradient='linear(to-r, #a956ff, #b975ff)' 
-          bgClip='text'
+          color="cyan"
           fontWeight={800}
           >
             Pablo
@@ -41,25 +46,30 @@ const Title: React.FC = () => {
           initial={{opacity:0}}
           animate={{opacity:1}}
           transition={{delay:2, duration: 1.5}} 
-          fontSize='xl'
+          fontSize={{base:"xl", md:"1vw"}}
           >
             Frontend developer
           </MotionText>
         </Stack>
-        <Link href="#projects">
+        <Link href="#projects" _hover={{textDecoration: "none"}}>
           <MotionBox 
           initial={{opacity:0}}
           animate={{opacity:1}}
           transition={{delay:3, 
           duration: 1.5}}
-          mt={{base: 5, md: 0}}
+          mt={{base: 5, md: 2}}
+          width={{base: 150, md:"10vw"}}
+          height={{base: 10, md:"2vw"}}
           >
             <Button 
-            colorScheme='purple' 
-            width="200px" 
+            colorScheme='cyan' 
+            width="100%"
+            height="100%"
             rounded="none"
             border="2px solid transparent" 
-            _hover={{bg:"none", borderColor:"purple.500"}}
+            _hover={{bg:"none", borderColor:"cyan", color: "cyan"}}
+            fontSize={{base: "md", md:"1vw"}}
+            zIndex={150}
             >
               MY PROJECTS
             </Button>

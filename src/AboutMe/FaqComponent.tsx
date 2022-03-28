@@ -9,7 +9,7 @@ import {
   Flex
 } from '@chakra-ui/react'
 
-const FaqComponent = (props)=> {
+const FaqComponent = ( props )=> {
 
   return(
     <Flex justifyContent="center" boxShadow='dark-lg'>

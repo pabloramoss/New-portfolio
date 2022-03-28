@@ -30,7 +30,7 @@ const projects = [{
   github: "https://github.com/pabloramoss/Gecomm",
   image: "/Images/gecommBanner.jpg",
   tech: ["NEXT.JS", "CHAKRA-UI", "SSR"],
-
+  id: "gecomm",
 },
 {
   name: "Valobrain",
@@ -39,7 +39,7 @@ const projects = [{
   github: "https://github.com/pabloramoss/stratcall",
   image: "/Images/valobrainBanner.jpg",
   tech: ["REACT JS","CHAKRA-UI", "YOUTUBE API"],
-
+  id: "valobrain",
 },
 {
   name: "El Torito Bar",
@@ -48,7 +48,7 @@ const projects = [{
   github: "https://github.com/pabloramoss/El-toro-bar",
   image: "/Images/toritoBanner.jpg",
   tech: ["TYPESCRIPT", "NEXT.JS", "CHAKRA-UI"],
-
+  id: "torito",
 },
 {
   name: "My blog",
@@ -57,7 +57,7 @@ const projects = [{
   github: "https://github.com/pabloramoss/my-blog",
   image: "/Images/myBlogBanner.jpg",
   tech: ["NEXT.JS", "CHAKRA-UI","MARKDOWN"],
-
+  id: "blog",
 },
 {
   name: "My portfolio",
@@ -66,7 +66,7 @@ const projects = [{
   github: "https://github.com/pabloramoss/New-portfolio",
   image: "/Images/myPortfolioBanner.jpg",
   tech: ["NEXTS.JS", "CHAKRA-UI"],
-
+  id: "portfolio",
 },
 ]
 export { projects }

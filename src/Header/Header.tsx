@@ -1,64 +1,52 @@
 import React from "react"
-import {Flex, Image, Box, Link, Tooltip} from "@chakra-ui/react"
-import config from "../config"
+import { Flex, Box, Link, Tooltip } from "@chakra-ui/react"
+import ProjectScreen from "./ProjectsScreen"
+import Title from "./Title"
 
 const Header = () => {
 
   return (
-      <Flex display={["none","none","flex","flex"]}>
-        <Flex position="absolute">
+      <Flex >
+        <Flex display={["none","none","flex","flex"]} position="absolute">
           <Box zIndex={3} >
-            <Link href="#projects">
-              <Tooltip placement="top" label="Projects">
+            <Link href="#contact">
+              <Tooltip placement="top" label="Contact me">
                 <Box  
                   h="19%"
-                  w="15%"
+                  w="6%"
                   /* bg="blue" */
                   position="absolute"
-                  right="19%"
-                  top="22%"
+                  right="36%"
+                  top="60%"
                   opacity={0.5}
                   />
                 </Tooltip>
             </Link>
-            <Link href="#contact">
-              <Tooltip placement="top" label="Contact">
+            <Link href="https://cafecito.app/pabloramoss" isExternal>
+              <Tooltip placement="top" label="Cafecito">
                 <Box  
-                  h="6%"
-                  w="6%"
+                  h="20%"
+                  w="10%"
                   /* bg="red" */
                   position="absolute"
-                  right="50%"
-                  top="33%"
+                  left="0%"
+                  top="78%"
                   opacity={0.5}
                 />
               </Tooltip>
             </Link>
-            <Link href={`#${encodeURI("about me")}`}>
-              <Tooltip placement="top" label="About me">
+            <Link href="https://rpablog.vercel.app/" isExternal>
+              <Tooltip placement="top" label="My blog">
                 <Box  
-                  h="21%"
-                  w="5%"
+                  h="63%"
+                  w="27%"
                   /* bg="green" */
                   position="absolute"
-                  right="45%"
-                  top="33%"
+                  left="0%"
+                  top="11%"
                   opacity={0.5}
                   />
               </Tooltip>
-            </Link>
-            <Link href={config.linkedin} isExternal>
-            <Tooltip placement="top" label="Linkedin">
-                <Box  
-                  h="6%"
-                  w="4%"
-                  /* bg="purple" */
-                  position="absolute"
-                  right="61%"
-                  top="21%"
-                  opacity={0.5}
-                  />
-            </Tooltip>
             </Link>
           </Box>
           <video
@@ -67,12 +55,15 @@ const Header = () => {
           muted
           >
             <source 
-            src="/Hero/portfolio.webm" 
-            type="video/webm" 
+            src="/Hero/heroVideo.mp4" 
+            type="video/mp4" 
             />
           </video>
         </Flex>
         <Box w="100vw" h="100vh" />
+        {/* <ProjectsViewer /> */}
+        <Title />
+        <ProjectScreen />
       </Flex>
         
   )

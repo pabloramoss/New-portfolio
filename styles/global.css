@@ -19,3 +19,40 @@ source {
   width: "100vw";
 }
 
+#div {
+  position: absolute;
+  overflow: hidden;
+  top: 750px;
+  left: 0;
+  height: 20vh;
+  width: 12vw;
+  background: #000;
+  opacity: 0.5;
+  z-index: 3;
+}
+.image-alpha {
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100vw;
+}
+.image-alpha:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+#hero {
+  background-image: url("/hero/Image5.png");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.project-screen {
+  transition: transform .2s;
+}
+.project-screen:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 3px rgba(255,255,255,0.75);
+}

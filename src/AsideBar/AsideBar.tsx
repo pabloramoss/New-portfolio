@@ -10,11 +10,7 @@ import {
   useDisclosure, 
   Divider, 
   Text, 
-  DrawerCloseButton,
-  Flex,
-  VStack,
-  Box
-} from '@chakra-ui/react';
+  DrawerCloseButton} from '@chakra-ui/react';
 import { FaBars } from 'react-icons/fa';
 import SocialMedia from './SocialMedia';
 import { motion } from 'framer-motion';
@@ -33,6 +29,7 @@ function AsideBar() {
         _hover={{bg:"none"}} 
         bg="none" 
         onClick={onOpen}
+        aria-label="menu" 
         >
           <FaBars size={30} />
         </Button>
@@ -51,12 +48,12 @@ function AsideBar() {
                     >
                       <MotionHeading 
                       whileHover={{scale: 1.02}}  
-                      _hover={{color:"purple.400"}} 
+                      _hover={{color:"cyan"}} 
                       fontWeight={400} 
                       color="white" 
                       fontSize={30} 
                       my={3} 
-                      colorScheme="purple"
+                      colorScheme="cyan"
                       >{section.toUpperCase()}
                       </MotionHeading>
                       <Divider />
