@@ -18,12 +18,12 @@ const ProjectSection = ()=> {
       {projects.map(project=> 
         <Stack key={project.name}>
           <ProjectCard 
-            title={project.name} 
-            tech={project.tech} 
-            src={project.image} 
-            url={project.url} 
-            description={project.description} 
-            github={project.github} 
+          title={project.name} 
+          tech={project.tech} 
+          src={project.image} 
+          url={project.url} 
+          description={project.description} 
+          github={project.github} 
           />
           <VerticalLine />
         </Stack>)}

@@ -10,10 +10,11 @@ import {
   useDisclosure, 
   Divider, 
   Text, 
-  DrawerCloseButton} from '@chakra-ui/react';
+  DrawerCloseButton,
+} from '@chakra-ui/react';
 import { FaBars } from 'react-icons/fa';
-import SocialMedia from './SocialMedia';
 import { motion } from 'framer-motion';
+import SocialMedia from './SocialMedia';
 
 function AsideBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();

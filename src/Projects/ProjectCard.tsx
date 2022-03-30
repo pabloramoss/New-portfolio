@@ -13,7 +13,7 @@ import React from 'react';
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion"
 
-const ProjectCard = (props)=> {
+const ProjectCard = ( props )=> {
   const MotionGrid = motion(Grid)
 
   return(
@@ -28,7 +28,7 @@ const ProjectCard = (props)=> {
     gridTemplateAreas = {{
       base: `
       "image image" 
-      "conten content"`, 
+      "content content"`, 
       sm: `
       "image content" 
       "image content"` 
