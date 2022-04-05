@@ -3,6 +3,7 @@
     project 3 = torito bar
     project 4 = my blog
     project 5 = my portfolio
+    project 6 = simple Api store
  */
 const config = {
   title: "Pablo Ramos",
@@ -67,6 +68,15 @@ const projects = [{
   image: "/Images/myPortfolioBanner.jpg",
   tech: ["NEXTS.JS", "CHAKRA-UI"],
   id: "portfolio",
+},
+{
+  name: "Simple API store",
+  description: "This is an API that can provide an array of 30 products or an object with a single product. Useful for e-commerce prototypes.",
+  url: "https://simpleapistore.vercel.app",
+  github: "https://github.com/pabloramoss/fake-api-shop",
+  image: "/Images/apiStoreBanner.jpg",
+  tech: ["NEXTS.JS", "CHAKRA-UI"],
+  id: "api",
 },
 ]
 export { projects }
