@@ -12,12 +12,12 @@ function MyApp({ Component, pageProps }) {
       <meta name="Pablo Ramos frontend developer" content="Portfolio Pablo Ramos" />
       <link rel="icon" href="/favicon-32x32.png" />
     </Head>
-    <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS}`} strategy="afterInteractive" />
+    <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-R3ERLVF182`} strategy="afterInteractive" />
     <Script id="google-analytics" strategy="afterInteractive">
       {`window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', ${process.env.GOOGLE_ANALYTICS});`}
+        gtag('config', G-R3ERLVF182);`}
     </Script>
     <ChakraProvider theme={theme}>
       <Component {...pageProps}  />
