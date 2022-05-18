@@ -17,17 +17,17 @@ const config = {
   softTechTitle: "Soft skills",
   futureTitle: "Future plans",
   about: "I am a frontend developer, passionate for learning about any kind of technology, always trying to improve my skills challenging myself. Currently working with React (especially with NextJS). Hope you found here who you are looking for. Greetings!",
-  hardTech: "HTML, CSS, Javascript, Typescript, React, Next.js, Chakra-UI, Framer-motion, MongoDB, Git, Github, Postman, Figma, Photoshop.",
+  hardTech: "HTML, CSS, Javascript, Typescript, React, Redux, Next.js, Chakra-UI, Framer-motion, MongoDB, Git, Github, Postman, Figma, Photoshop.",
   softTech: "Comunication, teamwork, flexibility, creativity, time management, planification.",
-  future: "My goal is keep improving my frontend and UI/UX skills. Also, I would like to learn everything related to web3 like Solidity, Web3.js, Ether.js, etc.",
+  future: "My goal is keep improving my frontend and UI/UX skills. Also, I would like to improve my knowdlege about web performance and web architecture.",
   telegram: "https://tttttt.me/pablooramoss",
   cv: "",
-};
+}
 
 const projects = [
   {
     name: "Simple API store",
-    description: "This is an API that can provide an array of 30 products or an object with a single product. Useful for e-commerce prototypes.",
+    description: "This is an API that can provide an array of 30 products or an object with a single product. Useful for e-commerce prototypes. It was made with Next.js API routes feature.",
     url: "https://simpleapistore.vercel.app",
     github: "https://github.com/pabloramoss/fake-api-shop",
     image: "/Images/apiStoreBanner.jpg",
@@ -36,11 +36,11 @@ const projects = [
   },
   {
     name: "Gecomm",
-    description: "Zero cost e-commerce, since it has a database of products and sales made in Google Sheet.",
+    description: "Zero cost e-commerce, since it has a database of products and sales made in Google Sheet. The app get the database from server side using getStaticProps and update the content at runtime with Incremental Static Regeneration.",
     url: "https://ecommerce-pablo.vercel.app/",
     github: "https://github.com/pabloramoss/Gecomm",
     image: "/Images/gecommBanner.jpg",
-    tech: ["NEXT.JS", "CHAKRA-UI", "SSR"],
+    tech: ["NEXT.JS", "CHAKRA-UI", "SSG", "ISR", "TELEGRAM API"],
     id: "gecomm",
   },
   {
@@ -58,7 +58,7 @@ const projects = [
     url: "https://eltoritobar.vercel.app",
     github: "https://github.com/pabloramoss/El-toro-bar",
     image: "/Images/toritoBanner.jpg",
-    tech: ["TYPESCRIPT", "NEXT.JS", "CHAKRA-UI"],
+    tech: ["TYPESCRIPT", "NEXT.JS", "CHAKRA-UI", "SSG", "ISR"],
     id: "torito",
   },
   {
@@ -81,4 +81,4 @@ const projects = [
   },
 ]
 export { projects }
-export default config;
+export default config

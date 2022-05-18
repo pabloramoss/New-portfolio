@@ -7,7 +7,8 @@ import {
   Text, 
   Badge, 
   Grid, 
-  GridItem 
+  GridItem, 
+  Wrap
 } from "@chakra-ui/react";
 import React from 'react';
 import { FaGithub } from "react-icons/fa";
@@ -73,15 +74,9 @@ const ProjectCard = ( props )=> {
               h={8} 
               />
             </Link>
-            <Stack 
-            direction="row" 
-            flexWrap="wrap" 
-            width="100%" 
-            gap={3} 
-            spacing={0}
-            >
+            <Wrap>
               {props.tech.map((item, index)=><Badge justifySelf="center" key={index}>{item}</Badge>)}
-            </Stack>
+            </Wrap>
           </Stack>
         </Stack>
       </GridItem>
