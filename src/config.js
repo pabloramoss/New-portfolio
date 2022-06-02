@@ -18,7 +18,7 @@ const config = {
   futureTitle: "Future plans",
   about: "I am a frontend developer, passionate for learning about any kind of technology, always trying to improve my skills challenging myself. Currently working with React (especially with NextJS). Hope you found here who you are looking for. Greetings!",
   hardTech: "HTML, CSS, Javascript, Typescript, React, Redux, Next.js, Chakra-UI, Tailwind CSS, Styled-components, Framer-motion, MongoDB, Git, Github, Postman, GraphQL, Jest, Cypress, React testing library, Figma, Photoshop.",
-  softTech: "Comunication, teamwork, flexibility, creativity, time management, planification.",
+  softTech: "Problem solving, comunication, teamwork, flexibility, creativity, time management, planning, discipline",
   future: "My goal is keep improving my frontend and UI/UX skills. Also, I would like to improve my knowledge about web performance and web architecture.",
   telegram: "https://tttttt.me/pablooramoss",
   cv: "",
