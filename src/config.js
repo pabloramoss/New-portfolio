@@ -4,6 +4,7 @@
     project 4 = my blog
     project 5 = my portfolio
     project 6 = simple Api store
+    project 7 = search gif
  */
 const config = {
   title: "Pablo Ramos",
@@ -25,6 +26,15 @@ const config = {
 }
 
 const projects = [
+  {
+    name: "Gif search",
+    description: "App where you can search gif images from Giphy API. Testing with Cypress.",
+    url: "https://gif-search-xi.vercel.app/",
+    github: "https://github.com/pabloramoss/giff-app-tailwind",
+    image: "/Images/gifBanner.jpg",
+    tech: ["NEXTS.JS", "TAILWIND-CSS", "REDUX TOOLKIT", "CYPRESS"],
+    id: "giphy",
+  },
   {
     name: "Simple API store",
     description: "This is an API that can provide an array of 30 products or an object with a single product. Useful for e-commerce prototypes. It was made with Next.js API routes feature.",
