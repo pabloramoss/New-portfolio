@@ -10,7 +10,7 @@ const config = {
   title: "Pablo Ramos",
   description: "Frontend Developer",
   siteUrl: "https://pabloramos.vercel.app",
-  twitter: "https://twitter.com/rpablo_dev",
+  twitter: "https://twitter.com/paablo_ramoss",
   github: "https://github.com/pabloramoss",
   linkedin: "https://www.linkedin.com/in/pabloramoss/",
   aboutTitle: "Who am I?",
